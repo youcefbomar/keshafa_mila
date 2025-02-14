@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bureau D'envirenment</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-content">
+                
+                <ul class="nav-links">
+                    <li><a href="#contact">الرئيسية</a></li>
+                    <li><a href="#contact">الأقسام الكشفية</a></li>
+                    <li><a href="#services">المكتبة</a></li>
+                    <li><a href="#about">الهيكلة</a></li>
+                    <li><a href="#stats">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+                <a href="#" class="logo">
+                
+                <img src="text1.png" alt="Logo">
+                <img src="photo_profil.png" alt="Logo">
+                
+                </a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>- فوج الأمل - ميلة</h1>
+                <h1 class="more_margin">الكشافة الاسلامية الجزائرية</h1>
+                <p>We help businesses understand and minimize their environmental impact through comprehensive analysis and actionable solutions.</p>
+                <a href="#contact" class="button">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="services">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for environmental impact assessment</p>
+            </div>
+            <div class="services">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Environmental Impact Assessment</h3>
+                    <p>Detailed analysis of business operations and their effects on local ecosystems, biodiversity, and natural resources. We provide actionable insights and recommendations.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Sustainability Consulting</h3>
+                    <p>Expert guidance on implementing eco-friendly practices, reducing carbon footprint, and developing sustainable business strategies for long-term growth.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Compliance Monitoring</h3>
+                    <p>Continuous monitoring and detailed reporting of environmental compliance with local and international standards, ensuring your business meets all requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <div class="stat-number">100+</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">18+</div>
+                    <p>Expert Consultants</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">100%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Us</h2>
+                <p>Leading the way in environmental impact assessment</p>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <p>The Bureau of Environmental Impact Studies is at the forefront of environmental assessment and sustainability consulting. Our team of expert environmental scientists and consultants combines cutting-edge technology with decades of experience to provide comprehensive solutions for businesses of all sizes.</p>
+            </div>
+        </section>
+
+        <section class="cta-section" data-aos="fade-up">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Let's work together to create a sustainable future for your business.</p>
+            <a href="#contact" class="button">Contact Us Today</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: wafabouch@ymail.com</p>
+                <p>Phone: 06.67.40.28.95</p>
+                <p>Tel/fax: 031.46.55.98</p>
+                <p>Address: logements Sanaoua (BEM) MILA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
