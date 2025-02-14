@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
 :root {
     --primary: #1a5f7a;
     --secondary: #88c425;
@@ -11,8 +14,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Cairo';
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -51,11 +55,16 @@ body {
 
 .nav-content {
     max-width: 1400px;
+    max-height: 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+
 
 .logo {
     font-size: 1.5rem;
@@ -65,14 +74,26 @@ body {
     background-image: url("photo_profil.png");
 }
 
-.header img {
-    height: 80px; /* Adjust size as needed */
+
+
+.main_logo{
+    height: 70px; /* Adjust size as needed */
     margin-right: 0px;
+}
+
+.secondary_logo{
+    height: 50px; /* Adjust size as needed */
+    margin-right:30px;
+    filter: invert(0);
 }
 
 .nav.scrolled .logo,
 .nav.scrolled .nav-links a {
     color: var(--dark);
+}
+
+.nav.scrolled .secondary_logo{
+    filter: invert(1);
 }
 
 .nav-links {
@@ -294,4 +315,38 @@ body {
     .section-title h2 {
         font-size: 2rem;
     }
+}
+#dropdown-maktabah{
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+
+#dropdown-maktabah li{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+#dropdown-maktabah ul{
+    margin-bottom: 0.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+#maktabah:hover #dropdown-maktabah{
+    display:block;
+    position: absolute;
+    margin-top: 0.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+}
+.nav.scrolled #maktabah:hover #dropdown-maktabah{
+    display:block;
+    position: absolute;
+    margin-top: 0.6rem;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
 }
