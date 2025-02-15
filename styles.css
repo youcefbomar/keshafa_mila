@@ -261,7 +261,7 @@ body {
 
 .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0px 20px rgba(17, 17, 17, 0.5);
+    box-shadow: 0 0px 20px rgba(0, 66, 30, 0.5);
     
 }
 
@@ -323,6 +323,7 @@ body {
 
 
 #dropdown-maktabah li{
+    text-align: right;
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-decoration: none;
