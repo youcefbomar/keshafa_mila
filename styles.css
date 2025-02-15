@@ -130,6 +130,7 @@ body {
 
 .hero-content {
     max-width: 800px;
+    animation: fadeBlurScale 1s ease-out forwards;
 }
 
 .hero h1 {
@@ -247,6 +248,7 @@ body {
 }
 
 .button {
+    margin-top: 2rem;
     display: inline-block;
     background: white;
     color: var(--dark);
@@ -261,7 +263,7 @@ body {
 
 .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0px 20px rgba(0, 66, 30, 0.5);
+    box-shadow: 0 0px 15px rgba(0, 66, 30, 0.5);
     
 }
 
@@ -350,4 +352,18 @@ body {
     background: rgb(255, 255, 255);
     border-radius: 5px;
     backdrop-filter: blur(20px);
+}
+
+
+@keyframes fadeBlurScale {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+    }
 }
